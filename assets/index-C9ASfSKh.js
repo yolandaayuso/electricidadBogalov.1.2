@@ -366,7 +366,7 @@ object-assign
         <a href="/contacto" style="display: inline-block; background-color: #0077b6; color: #fff; padding: 0.8rem 2rem; border-radius: 8px; margin-top: 1rem; text-decoration: none;">Solicitar asesoramiento</a>
       </p>
     </div>
-  `,author:"Equipo Electricidad Bógalo",date:"29/04/2025",image:"/images/POST1.png",tags:["Autoconsumo","Apagón","Inversor híbrido","Baterías","Energía solar"]},{id:"ventajas-bombeo-solar",title:"Ventajas del bombeo solar en la agricultura y ganadería",summary:"El bombeo solar representa una solución eficiente, autónoma y sostenible para el riego y el abastecimiento de agua en explotaciones rurales.",content:`
+  `,author:"Equipo Electricidad Bógalo",date:"29/04/2025",image:"/images/POST1.jpg",tags:["Autoconsumo","Apagón","Inversor híbrido","Baterías","Energía solar"]},{id:"ventajas-bombeo-solar",title:"Ventajas del bombeo solar en la agricultura y ganadería",summary:"El bombeo solar representa una solución eficiente, autónoma y sostenible para el riego y el abastecimiento de agua en explotaciones rurales.",content:`
      <article>
   <h1 style="font-size: 1.75rem; margin-bottom: 1rem;">🌞 Ventajas del bombeo solar en agricultura y ganadería</h1>
 
@@ -414,7 +414,7 @@ object-assign
     </p>
   </div>
 </article>
-    `,author:"Equipo Electricidad Bógalo",date:"27/04/2025",image:"/images/POST2.png",tags:["Bombeo solar","Agricultura","Energía renovable"]},{id:"ahorro-energetico-con-led",title:"Cómo las luces LED pueden ayudarte a ahorrar energía y dinero",summary:"Descubre por qué cambiar a iluminación LED es una de las formas más efectivas de reducir el consumo eléctrico en hogares y negocios.",content:`
+    `,author:"Equipo Electricidad Bógalo",date:"27/04/2025",image:"/images/POST2.jpg",tags:["Bombeo solar","Agricultura","Energía renovable"]},{id:"ahorro-energetico-con-led",title:"Cómo las luces LED pueden ayudarte a ahorrar energía y dinero",summary:"Descubre por qué cambiar a iluminación LED es una de las formas más efectivas de reducir el consumo eléctrico en hogares y negocios.",content:`
      <article>
   <h1 style="font-size: 1.75rem; margin-bottom: 1rem;">💡 Cómo ahorrar energía y dinero con iluminación LED</h1>
 
@@ -452,7 +452,7 @@ object-assign
   </div>
 </article>
 
-    `,author:"Equipo Electricidad Bógalo",date:"20/04/2025",image:"/images/POST3.png",tags:["LED","Ahorro energético","Iluminación eficiente"]}],WC=()=>a.jsxs(a.Fragment,{children:[a.jsx(Jt,{title:"Inicio",description:"Electricidad Bógalo - Empresa de servicios eléctricos y energías renovables en Ciudad Real. Instalaciones eléctricas, solares, bombeo solar, antenas, videoporteros y más.",keywords:"electricista Ciudad Real, instalaciones solares, energía renovable Castilla-La Mancha, servicio eléctrico 24h"}),a.jsx(Xt,{}),a.jsxs("main",{className:"overflow-hidden",children:[a.jsx(UC,{}),a.jsx("section",{className:"section-padding bg-gray-50",id:"servicios",children:a.jsxs("div",{className:"container-custom",children:[a.jsxs("div",{className:"text-center mb-12",children:[a.jsx("h2",{className:"text-3xl sm:text-4xl font-bold mb-6 text-energy-blue",children:"Nuestros servicios"}),a.jsx("p",{className:"text-lg text-gray-600 max-w-3xl mx-auto",children:"Ofrecemos una amplia gama de servicios eléctricos y de energías renovables para hogares, comercios e industrias."})]}),a.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch",children:cs.slice(0,7).map((e,t)=>{const n=t===cs.slice(0,7).length-1&&cs.slice(0,7).length%3===1;return a.jsxs("div",{style:{animationDelay:`${t*.1}s`},className:`
+    `,author:"Equipo Electricidad Bógalo",date:"20/04/2025",image:"/images/POST3.jpg",tags:["LED","Ahorro energético","Iluminación eficiente"]}],WC=()=>a.jsxs(a.Fragment,{children:[a.jsx(Jt,{title:"Inicio",description:"Electricidad Bógalo - Empresa de servicios eléctricos y energías renovables en Ciudad Real. Instalaciones eléctricas, solares, bombeo solar, antenas, videoporteros y más.",keywords:"electricista Ciudad Real, instalaciones solares, energía renovable Castilla-La Mancha, servicio eléctrico 24h"}),a.jsx(Xt,{}),a.jsxs("main",{className:"overflow-hidden",children:[a.jsx(UC,{}),a.jsx("section",{className:"section-padding bg-gray-50",id:"servicios",children:a.jsxs("div",{className:"container-custom",children:[a.jsxs("div",{className:"text-center mb-12",children:[a.jsx("h2",{className:"text-3xl sm:text-4xl font-bold mb-6 text-energy-blue",children:"Nuestros servicios"}),a.jsx("p",{className:"text-lg text-gray-600 max-w-3xl mx-auto",children:"Ofrecemos una amplia gama de servicios eléctricos y de energías renovables para hogares, comercios e industrias."})]}),a.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch",children:cs.slice(0,7).map((e,t)=>{const n=t===cs.slice(0,7).length-1&&cs.slice(0,7).length%3===1;return a.jsxs("div",{style:{animationDelay:`${t*.1}s`},className:`
           relative animate-fade-in h-full
           ${n?"lg:col-start-2 lg:justify-self-center":""}
         `,children:[a.jsx(HC,{className:"h-full flex flex-col justify-between",title:e.title,description:e.shortDesc,icon:a.jsx(e.icon,{size:28}),link:`/servicios#${e.id}`}),e.id=="deteccion"&&a.jsx("span",{className:`
