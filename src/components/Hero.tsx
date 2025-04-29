@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Círculo decorativo con logo embebido */}
       <div className="absolute -right-20 -top-20 w-64 h-64 bg-yellow-100 rounded-full opacity-100 z-0" >
       <img
-    src="images/logo.jpg"
+    src="images/logo.jpeg"
     alt="Logo decorativo dentro del círculo"
     className="absolute top-[60%] left-1/2 transform -translate-x-1/2 w-28 opacity-100 pointer-events-none"
   />
