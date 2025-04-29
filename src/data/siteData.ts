@@ -533,7 +533,7 @@ export const blogPosts = [
 ,  
     author: "Equipo Electricidad Bógalo",
     date: "29/04/2025",
-    image: "/images/POST1.jpg",
+    image: "images/POST1.jpg",
     tags: ["Autoconsumo", "Apagón", "Inversor híbrido", "Baterías", "Energía solar"]
   }
   
@@ -593,7 +593,7 @@ export const blogPosts = [
     `,
     author: "Equipo Electricidad Bógalo",
     date: "27/04/2025",
-    image: "/images/POST2.jpg",
+    image: "images/POST2.jpg",
         tags: ["Bombeo solar", "Agricultura", "Energía renovable"]
   }
   ,
@@ -642,7 +642,7 @@ export const blogPosts = [
     `,
     author: "Equipo Electricidad Bógalo",
     date: "20/04/2025",
-    image: "/images/POST3.jpg",
+    image: "images/POST3.jpg",
         tags: ["LED", "Ahorro energético", "Iluminación eficiente"]
   }
   

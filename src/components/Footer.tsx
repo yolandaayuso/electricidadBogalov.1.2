@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="text-xl font-heading font-bold flex items-center">
             <div className="w-10 h-10 mr-2 rounded-full overflow-hidden flex items-center justify-center bg-white">
   <img
-    src="/images/logobogalo.png"
+    src="images/logobogalo.png"
     alt="Logo Electricidad Bógalo"
     className="w-full h-full object-contain"
   />
