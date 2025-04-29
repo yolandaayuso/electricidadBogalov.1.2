@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/electricidadBogalov.1.2/',  // <-- Corrección aquí
-  server: {
+  base: '/',
+    server: {
     host: "::",
     port: 8080,
   },
