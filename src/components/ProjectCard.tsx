@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <h3 className="text-xl font-bold mb-2 text-energy-blue">{title}</h3>
         <p className="text-gray-600 mb-4 line-clamp-2">{description}</p>
         <Link
-          to={`/proyectos/`}
+          to={`/proyectos`}
           className="inline-block text-energy-blue font-medium hover:text-energy-lightBlue"
         >
           Ver proyecto
