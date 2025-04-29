@@ -24,7 +24,6 @@ const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const baseUrl = "https://www.electricidadbogalo.es"; 
-
   const post = blogPosts.find(post => post.id === id);
   const shareUrl = post ? `${baseUrl}/blog/${post.id}` : '';
   const shareTitle = post ? post.title : '';
