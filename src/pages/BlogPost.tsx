@@ -23,7 +23,7 @@ import { FaLink } from 'react-icons/fa';
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const baseUrl = "https://www.electricidadbogalo.es"; 
+  const baseUrl = "https://www.electricidadbogalo.es/#"; 
   const post = blogPosts.find(post => post.id === id);
   const shareUrl = post ? `${baseUrl}/blog/${post.id}` : '';
   const shareTitle = post ? post.title : '';
@@ -195,8 +195,7 @@ const BlogPost = () => {
   {/* WhatsApp */}
   <WhatsappShareButton
     url={shareUrl}
-    title={`Desde Electricidad Bógalo te contamos: ${shareTitle} ⚡ Descúbrelo aquí 👇`}
-    separator="\n\n"
+    title={`Desde Electricidad Bógalo te contamos: ${shareTitle} ⚡\n\nDescúbrelo aquí 👇\n${shareUrl}`}
   >
     <WhatsappIcon size={40} round />
   </WhatsappShareButton>
