@@ -35,7 +35,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center">
             <div className="text-energy-blue font-heading font-bold text-xl flex items-center">
               <img
-    src="images/logobogalo.png"
+    src="images/logo.jpeg"
     alt="Logo Electricidad Bogalo"
                 className="w-10 h-10 mr-2"
               />
