@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom"; // CAMBIO: HashRouter en lugar de BrowserRouter
 import { Helmet } from "react-helmet";
 import Index from "./pages/Index";
 import About from "./pages/About";
@@ -18,6 +18,7 @@ import Legal from "./pages/Legal";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+
 declare global {
   interface Window {
     dataLayer: any[];
@@ -74,7 +75,7 @@ const App = () => {
           <meta name="description" content="Electricidad Bógalo - Especialistas en servicios eléctricos y energías renovables en Ciudad Real y toda España. Instalaciones eléctricas, solares, bombeo solar, antenas y más." />
           <meta name="keywords" content="electricista Ciudad Real, instalaciones solares, energía renovable, bombeo solar, antenas, videoporteros, servicio eléctrico 24h, campo de montiel, valdepeñas" />
         </Helmet>
-        <BrowserRouter>
+        <HashRouter> {/* CAMBIO: Usar HashRouter */}
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
@@ -89,65 +90,63 @@ const App = () => {
             <Route path="/legal" element={<Legal />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
         {localStorage.getItem("cookiesAccepted") === null && (
-  <div
-    style={{
-      position: "fixed",
-      bottom: "1.5rem",
-      right: "1.5rem",
-      zIndex: 9999,
-      backgroundColor: "#fff",
-      borderRadius: "0.75rem",
-      padding: "1rem",
-      boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
-      maxWidth: "320px",
-      fontFamily: "system-ui, sans-serif",
-      fontSize: "0.875rem",
-      color: "#333",
-    }}
-  >
-    <div style={{ display: "flex", alignItems: "center", marginBottom: "0.5rem" }}>
-      <span style={{ fontSize: "1.5rem", marginRight: "0.5rem" }}>🍪</span>
-      <strong>Cookies y privacidad</strong>
-    </div>
-    <p style={{ marginBottom: "1rem" }}>
-      Usamos cookies para mejorar tu experiencia y analizar el tráfico. ¿Aceptas?
-    </p>
-    <div style={{ display: "flex", justifyContent: "flex-end", gap: "0.5rem" }}>
-    <button
-        onClick={handleAcceptCookies}
-        style={{
-          backgroundColor: "#1e40af",
-          color: "#fff",
-          border: "none",
-          padding: "0.4rem 0.8rem",
-          borderRadius: "0.375rem",
-          cursor: "pointer",
-          fontWeight: 500,
-        }}
-      >
-        Aceptar
-      </button>
-      <button
-        onClick={handleRejectCookies}
-        style={{
-          backgroundColor: "#e5e7eb",
-          color: "#000",
-          border: "none",
-          padding: "0.4rem 0.8rem",
-          borderRadius: "0.375rem",
-          cursor: "pointer",
-          fontWeight: 500,
-        }}
-      >
-        Denegar
-      </button>
-   
-    </div>
-  </div>
-)}
-
+          <div
+            style={{
+              position: "fixed",
+              bottom: "1.5rem",
+              right: "1.5rem",
+              zIndex: 9999,
+              backgroundColor: "#fff",
+              borderRadius: "0.75rem",
+              padding: "1rem",
+              boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
+              maxWidth: "320px",
+              fontFamily: "system-ui, sans-serif",
+              fontSize: "0.875rem",
+              color: "#333",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", marginBottom: "0.5rem" }}>
+              <span style={{ fontSize: "1.5rem", marginRight: "0.5rem" }}>🍪</span>
+              <strong>Cookies y privacidad</strong>
+            </div>
+            <p style={{ marginBottom: "1rem" }}>
+              Usamos cookies para mejorar tu experiencia y analizar el tráfico. ¿Aceptas?
+            </p>
+            <div style={{ display: "flex", justifyContent: "flex-end", gap: "0.5rem" }}>
+              <button
+                onClick={handleAcceptCookies}
+                style={{
+                  backgroundColor: "#1e40af",
+                  color: "#fff",
+                  border: "none",
+                  padding: "0.4rem 0.8rem",
+                  borderRadius: "0.375rem",
+                  cursor: "pointer",
+                  fontWeight: 500,
+                }}
+              >
+                Aceptar
+              </button>
+              <button
+                onClick={handleRejectCookies}
+                style={{
+                  backgroundColor: "#e5e7eb",
+                  color: "#000",
+                  border: "none",
+                  padding: "0.4rem 0.8rem",
+                  borderRadius: "0.375rem",
+                  cursor: "pointer",
+                  fontWeight: 500,
+                }}
+              >
+                Denegar
+              </button>
+            </div>
+          </div>
+        )}
       </TooltipProvider>
     </QueryClientProvider>
   );
